@@ -1,7 +1,7 @@
 Overview of DSMACCer
 ==============================================================
 
-The Dynamically Simple Model for Atmospheric Chemical Complexity in reactors (DSMACCer) is modified from the DSMACC original version and is designed to simulate the atmospheric chemistry in both chamber reactor and flow reactor. The original source code of DSMACC box model is avaliable from [barronh/DSMACC](https://github.com/barronh/DSMACC) and has been integrated into the Geos-Chem global atmospheric model as chemical transport submodel. The DSMACC box model was modified to simulate the chamber data from the University of Florida UF-APHOR outdoor chamber. The current version of DSMACCr is designed to simualte the data from flowtube and chamber.
+The Dynamically Simple Model for Atmospheric Chemical Complexity in reactors (DSMACCer) is modified from the DSMACC original version and is designed to simulate the atmospheric chemistry in both chamber reactor and flow reactor. The original source code of DSMACC box model is avaliable from [barronh/DSMACC](https://github.com/barronh/DSMACC) and has been integrated into the Geos-Chem global atmospheric model as chemical transport submodel. The DSMACC box model was modified to simulate the chamber data from the University of Florida UF-APHOR outdoor chamber. The current version of DSMACCer is designed to simualte the data from flowtube and chamber.
 
 Reference:
 1. Development of DSMACC: Emmerson, KM; Evans, MJ (2009) Comparison of tropospheric gas-phase chemistry schemes for use within global models, ATMOS CHEM PHYS, 9(5), pp1831-1845 doi: 10.5194/acp-9-1831-2009 .
@@ -11,21 +11,21 @@ Reference:
 Contents
 ================================================================
 
-1. [Install DSMACCr and the necessary environments](#1-Install-DSMACCr)
+1. [Install DSMACCer and the necessary environments](#1-Install-DSMACCer)
 8. [Q&A](#8-Questions-and-answers)
 
-## 1. Install DSMACCr
+## 1. Install DSMACCer
 
-This describes the necessary steps to run the DSMACCr model in a lunix environment.
+This describes the necessary steps to run the DSMACCer model in a lunix environment.
 
 1. The necessary environmental packages: make sed byacc flex bison gfortran-7 vim csh
 2. add the following path to the env:
 ```
-export DSMACCr=/path-to-the-DSMACCr-directory/
-export KPP_HOME=$DSMACCr/kpp
+export DSMACCer=/path-to-the-DSMACCer-directory/
+export KPP_HOME=$DSMACCer/kpp
 export PATH=$PATH:$KPP_HOME/bin
 ```
-3. The fortran compiler used for DSMACCr is gcc-7 and gfortran-7, which should be preinstalled
+3. The fortran compiler used for DSMACCer is gcc-7 and gfortran-7, which should be preinstalled
 4. Compile "KPP" PreProcessor
 ```
 cd $KPP_HOME
